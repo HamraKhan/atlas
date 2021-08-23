@@ -2,15 +2,27 @@
 <html>
 
 <head>
-    <script
-        src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script type="text/javascript" src="./mainMenu/mainMenu.js"></script>
+    <script type="text/javascript" src="./slideshow/slideshow.js"></script>
 </head>
 
 <body>
     <div w3-include-html="header/navigationBar.html"></div>
     
+    <div w3-include-html="slideshow/slideshow.html"></div>
+
+    <div w3-include-html="foodMenu/menu.html"></div>
+
+    <div w3-include-html="mainMenu/main.html"></div>
+    
     <script>
-        w3IncludeHTML();
+        w3IncludeHTML(callback);
+
+        function callback() {
+            renderMenu();
+            showSlides(1);
+        }
     </script>
 
 </body>
