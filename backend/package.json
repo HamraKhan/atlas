@@ -1,0 +1,28 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "Atlas web application to make restaurant bookings.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamra111/atlas.git"
+  },
+  "keywords": [
+    "atlas",
+    "restaurant",
+    "cafe",
+    "bookings"
+  ],
+  "author": "Hamra Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamra111/atlas/issues"
+  },
+  "homepage": "https://github.com/hamra111/atlas#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
