@@ -1,0 +1,56 @@
+/* HEADER AND LOGO*/
+#header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+  }
+  
+  
+  #atlas-logo {
+    text-align: center;
+    height: 140px;
+  }
+  
+  #logo-image {
+    height: 150px;  
+    margin-top: 20px;
+  }
+  
+  /* NAVIGATION BAR*/
+  #menu-bar {
+    font-family: 'Raleway', sans-serif;
+    font-weight: semi-bold;
+    font-size:1.75rem;
+    display:flex;
+    justify-content:space-evenly;
+    position: relative; 
+    
+  }
+  
+  #menu-bar ul {
+    list-style-type:none;
+    display:flex;
+    width:100%;
+    align-items:center;
+    justify-content:space-evenly;
+  }
+  
+  .menu-left {
+    text-decoration:none;
+    color:#66C4BE;
+  }
+  
+  .menu-right {
+    text-decoration:none;
+    color:#66C4BE;
+  }
+  
+  .menu-left:hover {
+    color:#F5BE39;  
+  }
+  
+  .menu-right:hover {
+    color:#F5BE39;  
+  }
