@@ -2,7 +2,7 @@
   "name": "atlas",
   "version": "1.0.0",
   "description": "Atlas web application to make restaurant bookings.",
-  "main": "index.js",
+  "main": "./backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
