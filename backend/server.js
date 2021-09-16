@@ -2,23 +2,19 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-var path = require('path');
-var public = path.join(__dirname, '../frontend');
+const bookingsRoute = require('./booking/bookingRoute')
+const customerRoute = require('./customer/customerRoute')
 
+let path = require('path');
+let public = path.join(__dirname, '../frontend');
 
+// * Routes * //
+app.use('/', express.static(public));
 app.get('/', function(req, res) {
     res.sendFile(path.join(public, 'dashboard.html'));
 });
 
-app.use('/', express.static(public));
-
-// // Setting up the public directory
-// app.use(express.static('./../frontend'));
-
-// app.get('/', (req, res) => {
-//     res.sendFile(path.resolve('../frontend/dashboard.html'));
-// });
-
-
+app.use('/bookings', bookingsRoute);
+app.use('/customers', customerRoute);
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
