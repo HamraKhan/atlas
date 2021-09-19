@@ -8,6 +8,8 @@ const customerRoute = require('./customer/customerRoute')
 let path = require('path');
 let public = path.join(__dirname, '../frontend');
 
+app.use(express.json());
+
 // * Routes * //
 app.use('/', express.static(public));
 app.get('/', function(req, res) {
