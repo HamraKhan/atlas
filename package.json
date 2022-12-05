@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/hamra111/atlas#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-validator": "^6.12.1"
   }
 }
