@@ -1,61 +1,47 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="./booking/booking.css" />
-  </head>
+<head>
+  <link rel="stylesheet" href="./booking/booking.css" />
+</head>
 
-  <body>
-    <!--Booking form-->
-    <hr />
-    <h1>BOOKING</h1>
+<body>
+  <!--Booking form-->
+  <hr />
+  <h1>BOOKING</h1>
 
-    <div class="book">
-      <form class="booking-form">
-        <div class="row">
-            <div class="column">
-          <label for="fullname">First name</label><br>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            required
-          /><br>
+  <div id="book" class="book">
+    <form
+      id="form"
+      class="booking-form"
+      name="bookingForm"
+      onsubmit="return validateForm()"
+    >
+      <div class="row">
+        <div class="column">
+          <label for="fullname">First name</label><br />
+          <input type="text" id="fname" name="fname" title="Enter your first name"/><br />
 
-          <label for="email">Email</label><br>
-          <input type="email" id="email" pattern="" required /><br>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" title="Enter your email address"/><br />
 
-          <label for="date">Reservation date</label><br>
-          <input
-            type="date"
-            data-date=""
-            data-date-format="DD MMMM YYYY"
-            value="2015-08-09"
-            id="date"
-            required
-          /><br>
+          <label for="datePicker">Reservation date</label><br />
+          <input type="date" id="datePicker" name="datePicker" /><br />
 
-          <label for="number">No. of people</label><br>
-          <input type="number" value="0" id="number" />
+          <label for="number">No. of people</label><br />
+          <input type="number" value="0" id="number" name="guests" title="Enter no of guests"/>
         </div>
 
-         <div class="column">
-        <label for="fullname">Last name</label><br>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            required
-          /><br>
-          <label for="phone">Phone</label><br>
-          <input type="tel" id="phone" required />
+        <div class="column">
+          <label for="fullname">Last name</label><br />
+          <input type="text" id="lname" name="lname"  title="Enter your last name"/><br />
 
-          <label for="time">Reservation time</label><br>
-          <input type="time" id="time" required />
-        </div>
-        </div>
+          <label for="phone">Phone</label><br />
+          <input type="tel" id="phone" name="phone" title="Enter your phone number"/>
 
-        <button>Submit</button>
-      </form>
-    </div>
-  </body>
-</html>
+          <label for="time">Reservation time</label><br />
+          <input type="time" name="time" id="time" />
+        </div>
+      </div>
+
+      <button type="submit" value="Submit" >Submit</button>
+    </form>
+  </div>
+</body>
