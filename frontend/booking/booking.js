@@ -6,6 +6,8 @@ function submitBooking(event) {
 
 //Form validation
 function validateForm() {
+  const nameRegex = /^[A-Za-z\s.'-]+$/;
+
   const emailRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
@@ -32,8 +34,18 @@ function validateForm() {
     document.bookingForm.fname.focus();
     return false;
   }
+  if (!firstName.match(nameRegex)) {
+    alert("Please enter a valid first name");
+    document.bookingForm.fname.focus();
+    return false;
+  }
   if (lastName === "") {
     alert("Please provide a last name");
+    document.bookingForm.lname.focus();
+    return false;
+  }
+  if (!lastName.match(nameRegex)) {
+    alert("Please enter a valid last name");
     document.bookingForm.lname.focus();
     return false;
   }
