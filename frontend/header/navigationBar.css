@@ -1,4 +1,9 @@
 /* HEADER AND LOGO*/
+:root {
+  --navbar-text: #3f3f3f;
+  --navbar-text-hover: #5ce0e0;
+}
+
 #header {
     position: fixed;
     background-color: white;
@@ -9,20 +14,14 @@
   
   
   #atlas-logo {
-    text-align: center;
+    padding-top: 0.8rem;
     height: 140px;
-  }
-  
-  #logo-image {
-    height: 150px;  
-    margin-top: 20px;
   }
   
   /* NAVIGATION BAR*/
   #menu-bar {
     font-family: 'Raleway', sans-serif;
-    font-weight: semi-bold;
-    font-size:1.75rem;
+    font-size:1rem;
     display:flex;
     justify-content:space-evenly;
     position: relative; 
@@ -39,18 +38,18 @@
   
   .menu-left {
     text-decoration:none;
-    color:#66C4BE;
+    color: var(--navbar-text);
   }
   
   .menu-right {
     text-decoration:none;
-    color:#66C4BE;
+    color:var(--navbar-text);
   }
   
   .menu-left:hover {
-    color:#F5BE39;  
+    color: var(--navbar-text-hover);  
   }
   
   .menu-right:hover {
-    color:#F5BE39;  
+    color: var(--navbar-text-hover);  
   }
