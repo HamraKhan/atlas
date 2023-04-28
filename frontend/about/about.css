@@ -1,23 +1,29 @@
 #about {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.6rem;
-    font-weight: normal;
-    color: #66C4BE;
-    padding-top: 100px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #66c4be;
+  padding-top: 100px;
 }
 
 .about-description {
-    text-align: center;
-    font-family: 'Courier New', monospace;
-    font-size: 1.4rem;
-    line-height: 1.4;
-    padding-left: 95px;
-    padding-right: 95px;
+  text-align: center;
+  font-family: "Courier New", monospace;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+#moodboard-container {
+  position: relative;
+  width: 100%;
 }
 
 #moodboard-image {
-    padding: 50px 0px 50px 0px;
-    height: auto;
-    width: 1213px;
+  padding: 50px 0px 50px 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
